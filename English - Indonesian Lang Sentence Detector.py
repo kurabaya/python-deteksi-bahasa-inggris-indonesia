@@ -1,7 +1,7 @@
 " English or Bahasa Indonesia Sentence Detector Program - Faizal SF "
 
 #Refering and splitting source database
-sourceEnglish = open('output.txt', 'r').read()
+sourceEnglish = open('english.txt', 'r').read()
 sourceIndonesia = open('indonesia.txt', 'r').read()
 splitDbseEnglish = sourceEnglish.split('\n')
 replaceDbseIndonesia = sourceIndonesia.replace(" ","").replace("(k)", "").replace("(n)", "").replace("(v)", "").replace("(i)", "").replace("(num)", "").replace("\n", " ").replace("(pron)", "").replace("(l)", "")
